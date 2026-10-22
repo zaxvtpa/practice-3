@@ -3,12 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
-    <link rel="stylesheet" href="./src/styles/main.scss" />
-    <link rel="stylesheet" href="./src/js/main.js" />
-    <title></title>
+    <title>практика 3</title>
+    <link rel="stylesheet" href="/src/styles/main.scss" />
   </head>
   <body>
-    <script type="module" src="./src/js/main.js"></script>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__left">
+          <button class="header__burger" aria-label="Открыть меню">
+            <img src="/images/icon-menu.svg" alt="Меню" />
+          </button>
+
+          <a href="/" class="header__logo">
+            <img src="/images/logo-cps.svg" alt="Логотип" />
+          </a>
+        </div>
+
+        <div class="header__right">
+          <div class="header__divider"></div>
+
+          <button class="header__action" aria-label="Сервис">
+            <img src="/images/repair.svg" alt="Сервис" />
+          </button>
+
+          <button class="header__action" aria-label="Статус">
+            <img src="/images/checkstatus.svg" alt="Статус" />
+          </button>
+        </div>
+      </div>
+    </header>
   </body>
 </html>

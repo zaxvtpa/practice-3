@@ -1,3 +1,7 @@
-@use './_mixins';
-@use './_variables';
-@use './_base';
+@import './_variables';
+@import './_mixins';
+@import './_base';
+
+@import './components/header';
+@import './components/sidebar';
+@import './components/article';

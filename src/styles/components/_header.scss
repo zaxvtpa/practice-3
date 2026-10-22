@@ -1,0 +1,54 @@
+.header {
+  width: 100%;
+  background-color: $color-white;
+  padding: 20px 0;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__burger {
+    @include icon-button-base(40px);
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+
+    img {
+      height: 50px;
+      width: auto;
+      display: block;
+    }
+  }
+
+  &__divider {
+    width: 2px;
+    height: 32px;
+    background-color: $color-divider;
+    margin: 0 8px;
+  }
+
+  &__action {
+    @include icon-button-base(40px);
+  }
+}
