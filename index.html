@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>практика 3</title>
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+  </head>
+  <body>
+    <!-- ОБЕРТКА ДЛЯ ВСЕГО САЙТА (чтобы на десктопе поставить сайдбар и контент в ряд) -->
+  <div class="page-wrapper">
+
+    <!-- САЙДБАР (виден только на десктопе) -->
+    <aside class="sidebar">
+      <!-- Верхняя часть сайдбара (Логотип и поиск) -->
+      <div class="sidebar__top">
+        <a href="/" class="sidebar__logo">
+          <img src="/images/logo-cps.svg" alt="CPS" />
+        </a>
+        <button class="sidebar__search" aria-label="Поиск">
+          <img src="/images/search.svg" alt="Поиск" />
+        </button>
+      </div>
+
+      <!-- Меню навигации -->
+      <ul class="sidebar__list">
+        <li class="sidebar__item"><a href="#" class="sidebar__link">Ремонт техники</a></li>
+        <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__link--active">Услуги и сервисы</a></li>
+        <li class="sidebar__item"><a href="#" class="sidebar__link">Корпоративным клиентам</a></li>
+        <li class="sidebar__item"><a href="#" class="sidebar__link">Продавцам техники</a></li>
+        <li class="sidebar__item"><a href="#" class="sidebar__link">Партнерам</a></li>
+        <li class="sidebar__item"><a href="#" class="sidebar__link">Производителям</a></li>
+        <li class="sidebar__item"><a href="#" class="sidebar__link">Наши сервисные центры</a></li>
+        <li class="sidebar__item"><a href="#" class="sidebar__link">Контакты</a></li>
+      </ul>
+
+      <!-- Нижняя часть сайдбара (Контакты) -->
+      <div class="sidebar__bottom">
+        <div class="sidebar__actions">
+          <button class="sidebar__action-btn" aria-label="Звонок"><img src="/images/call.svg" alt="Звонок"></button>
+          <button class="sidebar__action-btn" aria-label="Чат"><img src="/images/chat.svg" alt="Чат"></button>
+          <button class="sidebar__action-btn" aria-label="Профиль"><img src="/images/profile.svg" alt="Профиль"></button>
+        </div>
+        <a href="mailto:mail@cps.com" class="sidebar__contact-link">mail@cps.com</a>
+        <a href="tel:88008908900" class="sidebar__contact-link sidebar__phone">8 800 890 8900</a>
+
+        <div class="sidebar__langs">
+          <a href="#" class="sidebar__lang sidebar__lang--active">RU</a>
+          <a href="#" class="sidebar__lang">EN</a>
+          <a href="#" class="sidebar__lang">CH</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main class="main-content">
+
+      <!-- ШАПКА -->
+      <header class="header">
+        <div class="header__container">
+
+          <!-- Левая часть (видна на мобилке и планшете) -->
+          <div class="header__left">
+            <button class="header__burger" aria-label="Открыть меню">
+              <img src="/images/icon-menu.svg" alt="Меню" />
+            </button>
+            <div class="header__divider header__divider--tablet"></div>
+            <a href="/" class="header__logo">
+              <img src="/images/logo-cps.svg" alt="Логотип" />
+            </a>
+          </div>
+
+          <!-- Правая часть -->
+          <div class="header__right">
+            <!-- Кнопки для планшета (скрыты на мобилке) -->
+            <button class="header__action header__action--tablet" aria-label="Звонок">
+              <img src="/images/call.svg" alt="Звонок">
+            </button>
+            <button class="header__action header__action--tablet" aria-label="Чат">
+              <img src="/images/chat.svg" alt="Чат">
+            </button>
+            <button class="header__action header__action--tablet" aria-label="Профиль">
+              <img src="/images/profile.svg" alt="Профиль">
+            </button>
+            <div class="header__divider"></div>
+            
+            <div class="header__action-wrapper">
+              <span class="header__action-text">Оставить заявку</span>
+              <button class="header__action" aria-label="Сервис">
+                <img src="/images/repair.svg" alt="Сервис">
+              </button>
+            </div>
+
+            <div class="header__action-wrapper">
+              <span class="header__action-text">Статус ремонта</span>
+              <button class="header__action" aria-label="Статус">
+                <img src="/images/checkstatus.svg" alt="Статус">
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </header>
+
+      <!-- СЕКЦИЯ УСЛУГИ И СЕРВИСЫ -->
+      <section class="services">
+        <h1 class="page-title">Услуги и сервисы</h1>
+
+        <!-- Табы -->
+        <div class="tabs">
+          <div class="tabs__list">
+            <span class="tabs__item tabs__item--active">Ремонтируемые устройства</span>
+            <span class="tabs__item">Дополнительные услуги</span>
+            <span class="tabs__item">Цены на услуги</span>
+            <span class="tabs__item">Адреса сервисных центров</span>
+            <span class="tabs__item">Специальные цены</span>
+            <span class="tabs__item">Отзывы</span>
+          </div>
+        </div>
+
+        <!-- Контент -->
+        <div class="services__content">
+
+          <div class="services__info">
+            <p class="services__text">
+              Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+            </p>
+
+            <p class="services__text services__text--tablet">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="services__text--desktop">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+            </p>
+
+            <div class="services__more">
+              <img src="/images/expend.svg" alt="" class="services__more-icon" />
+              <span class="services__more-text">Читать далее</span>
+            </div>
+          </div>
+
+          <img src="/images/cps-sign.svg" alt="Офис CPS" class="services__image" />
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
