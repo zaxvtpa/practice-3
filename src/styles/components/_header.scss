@@ -11,7 +11,7 @@
   }
 
   &__container {
-    max-width: 1200px;
+    min-width: 100%;
     margin: 0 auto;
     padding: 0 16px;
     display: flex;
@@ -68,7 +68,7 @@
       padding: 0 24px;
     }
 
-     &__action--tablet {
+    &__action--tablet {
       display: flex;
     }
 
